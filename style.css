@@ -1,0 +1,285 @@
+@font-face {
+    font-family: pixel;
+    src: url(fonts/Mister\ Pixel\ Regular.woff) format(woff)
+}
+@font-face {
+    font-family: symbols;
+    src: url(fonts/Mister\ Pixel\ Tools.woff) format(woff)
+}
+@font-face {
+    font-family: lack;
+    src: url(fonts/Lack-Regular.woff) format(woff)
+}
+@font-face {
+    font-family: lackline;
+    src: url(fonts/Lack-Line-Regular.woff) format(woff)
+}
+@media only screen and (max-width: 1024px) {
+    .column{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .column img {
+        margin-top: 0;
+        vertical-align: middle;
+        border: 2px solid black;
+    }
+    h1 {
+        display: none !important;
+    }
+    #jake {
+        border: 2px solid black;
+    }
+    #eye {
+        display: block !important;
+        font-family: symbols;
+        font-size: 300px;
+        text-align: center;
+        padding: 1rem;
+    }
+    #menu {
+        display: flex;
+        font-family: symbols;
+        font-size: 65px;
+        justify-content: space-between;
+    }
+    #items:hover {
+        cursor: pointer;
+    }
+    #greeting {
+        font-family: lackline;
+        font-size: 150px;
+        animation: rotation 3s infinite linear;
+        position: absolute;
+        top: 500px;
+    }
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(359deg);
+        }
+    }
+    #aboutme {
+        font-family: lack;
+        font-size: 60px;
+        display: relative;
+        padding-top: 325px;
+    }
+    .thankyou {
+        font-family: lackline;
+        font-size: 150px;
+        position: absolute;
+        top: 1100px;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    #contactpage {
+        display: flex;
+        font-family: lack;
+        font-size: 150px;
+    }
+    #links {
+        padding-top: 15rem;
+        padding-left: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    #email {
+        color: black;
+        text-decoration: none;
+    }
+    #instagram {
+        color: black;
+        text-decoration: none;
+    }
+    #linkedin {
+        color: black;
+        text-decoration: none;
+    }
+    #email:hover {
+        font-family: lackline;
+        text-decoration: none;
+    }
+    #instagram:hover {
+        font-family: lackline;
+        text-decoration: none;
+    }
+    #linkedin:hover {
+        font-family: lackline;
+        text-decoration: none;
+    }
+    #marquee {
+        width: 100vw;
+        flex-basis: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    .track-content {
+        font-family: lack;
+        font-size: 150px;
+    }
+    .track-content2 {
+        font-family: lackline;
+        font-size: 150px;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    #grid {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #jake {
+        border: 2px solid black;
+    }
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .column img {
+        margin-top: 0;
+        vertical-align: middle;
+        border: 2px solid black;
+      }
+    .header {
+        display: flex;
+    }
+    h1 {
+        font-family: pixel;
+        font-size: 423px;
+        margin: 0;
+    }
+    #eye {
+        font-family: symbols;
+        font-size: 423px;
+    }
+    #menu {
+        display: flex;
+        font-family: symbols;
+        font-size: 150px;
+        justify-content: space-between;
+    }
+    #items:hover {
+        cursor: pointer;
+    }
+    #greeting {
+        font-family: lackline;
+        font-size: 250px;
+        animation: rotation 3s infinite linear;
+        position: absolute;
+        top: 650px;
+    }
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        } to {
+            transform: rotate(359deg);
+        }
+    }
+    #aboutme {
+        font-family: lack;
+        font-size: 100px;
+        display: relative;
+        padding-top: 400px;
+        padding-left: 2rem;
+    }
+    .thankyou {
+        padding: 0;
+        font-family: lackline;
+        font-size: 250px;
+        position: absolute;
+        top: 1500px;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    #contactpage {
+        display: flex;
+        font-family: lack;
+        font-size: 150px;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    #links {
+        padding-top: 15rem;
+        padding-left: 1rem;
+        position: relative;
+        overflow: hidden;
+        align-items: center;
+    }
+    #email {
+        color: black;
+        text-decoration: none;
+    }
+    #instagram {
+        color: black;
+        text-decoration: none;
+    }
+    #linkedin {
+        color: black;
+        text-decoration: none;
+    }
+    #email:hover {
+        font-family: lackline;
+        text-decoration: none;
+    }
+    #instagram:hover {
+        font-family: lackline;
+        text-decoration: none;
+    }
+    #linkedin:hover {
+        font-family: lackline;
+        text-decoration: none;
+    }
+    #marquee {
+        width: 100vw;
+        flex-basis: 100%;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    #track {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 10s linear infinite;
+    }
+    @keyframes marquee {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-50%);
+        }
+    }
+    .track-content {
+        font-family: lack;
+        font-size: 250px;
+    }
+    .track-content2 {
+        font-family: lackline;
+        font-size: 250px;
+    }
+}
